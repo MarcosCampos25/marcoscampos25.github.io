@@ -51,7 +51,7 @@ function cadenaRandomGroovy(){
   let string = "";
 
   for (let i = 0; i < cadena.length; i++) {
-    string += "["+'"'+cadena[i]+'"'+"]" + "," +"\n"
+    string += "[" + "PersonaCi:" +'"'+cadena[i]+'"'+"]" + "," +"\n"
   }
   return string;
 }
