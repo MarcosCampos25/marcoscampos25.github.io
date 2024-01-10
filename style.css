@@ -27,8 +27,14 @@ a{text-decoration: none}
     width: 24%;
     height: 34%;
     min-height: 273px;
-    background: #eee;
+    background: #ffffff;
     border-radius: 15px;
+}
+#avatar_pic {
+  width: 80%;
+  height: 80%;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
 }
 
 .validation{
@@ -87,7 +93,7 @@ label{
 
 input{
     border: 0;
-    font-size: 2em;
+    font-size: 1.8em;
     background: #eee;
 }
 #numberOfCis {

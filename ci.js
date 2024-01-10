@@ -1,3 +1,6 @@
+const MAX_RANDOM = 9999
+const MIN_RANDOM = 0
+
 function validation_digit(ci){
   var a = 0;
   var i = 0;
@@ -32,7 +35,6 @@ function random_ci(){
 function clean_ci(ci){
   return ci.replace(/\D/g, '');
 }
-
 
 
 function cadenaRandom(){
@@ -94,7 +96,27 @@ function cadenaGroovySql () {
   }
 
   return resultado + "\n" + stringGroovy
-
-
-
 }
+
+
+function ran_mail() {
+  const dominios = ['gmail', 'yahoo', 'hotmail', 'live', 'example'];
+  const nombres = ['juan', 'pedro', 'marcos', 'julieta', 'paula', 'emma', 'felipe', 'mateo', 'sofia'];
+  const extensiones = ['.com', '.net', '.org', '.uy', '.arg', '.cl'];
+
+  const numeroAleatorio = getRandomInt(MIN_RANDOM, MAX_RANDOM)
+  const nombreAleatorio = nombres[Math.floor(Math.random() * nombres.length)];
+  const dominioAleatorio = dominios[Math.floor(Math.random() * dominios.length)];
+  const extensionAleatoria = extensiones[Math.floor(Math.random() * extensiones.length)];
+  const emailAleatorio = `${nombreAleatorio}${numeroAleatorio}@${dominioAleatorio}${extensionAleatoria}`;
+ 
+  return emailAleatorio;
+}
+
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
+}
+

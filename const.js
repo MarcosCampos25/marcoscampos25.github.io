@@ -1,0 +1,2 @@
+const MAX_RANDOM = 9999
+const MIN_RANDOM = 0

@@ -34,6 +34,10 @@ sqlGroovyRandom.addEventListener('click', function(){
   document.getElementById("ran_ci_col").value = cadenaGroovySql();
 });
 
+random_mail.addEventListener('click', function(){
+  document.getElementById("ran_email").value = ran_mail();
+});
+
 
 function ci_uy(ci){
   if(ci.length > 5){
@@ -41,4 +45,5 @@ function ci_uy(ci){
     document.getElementById("validation").value = validation_digit(ci);
   }
 }
+
 
